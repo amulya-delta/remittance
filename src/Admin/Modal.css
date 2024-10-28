@@ -1,0 +1,68 @@
+/* Modal overlay: background behind the popup */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the overlay appears above other content */
+}
+
+/* Modal content: popup container */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+  outline: none; /* Remove default focus outline */
+}
+
+/* Header for the modal */
+.modal h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+/* Text inside the modal */
+.modal p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Buttons inside the modal */
+.modal button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* "Close" button with a green background */
+.modal button.close {
+  background-color: #4CAF50; /* Green */
+}
+
+.modal button.close:hover {
+  background-color: #45a049;
+}
+
+/* "Cancel" button with a red background */
+.modal button.cancel {
+  background-color: #f44336; /* Red */
+}
+
+.modal button.cancel:hover {
+  background-color: #d32f2f;
+}
